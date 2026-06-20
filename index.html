@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>멘헤라다경2</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="floatingHearts"></div>
+
+<div class="container">
+
+    <!-- 시작 -->
+    <section id="startScreen" class="screen active">
+
+        <div class="card">
+
+            <div class="logo">
+                💖
+            </div>
+
+            <h1>
+                애착유형 테스트
+            </h1>
+
+            <p>
+                이름을 입력하고 시작하세요
+            </p>
+
+            <input
+                id="nameInput"
+                type="text"
+                placeholder="이름 입력"
+            >
+
+            <button id="startBtn">
+                테스트 시작하기 💕
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- 질문 -->
+
+    <section id="questionScreen" class="screen">
+
+        <div class="progress-text">
+
+            <span id="currentNum">1</span>
+            /
+            <span id="totalNum">8</span>
+
+        </div>
+
+        <div class="progress-wrap">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <div class="card">
+
+            <div id="questionNumber">
+                Q1
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <div class="answers">
+
+                <button
+                    class="answer-btn"
+                    data-answer="O"
+                >
+                    O
+                </button>
+
+                <button
+                    class="answer-btn"
+                    data-answer="X"
+                >
+                    X
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 로딩 -->
+
+    <section id="loadingScreen" class="screen">
+
+        <div class="card">
+
+            <div class="loader"></div>
+
+            <h2 class="loading-title">
+                분석중...
+            </h2>
+
+            <p id="loadingText">
+                애착유형 분석중
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- 결과 -->
+
+    <section id="resultScreen" class="screen">
+
+        <div class="card result-card">
+
+            <div class="result-label">
+                💖 결과 💖
+            </div>
+
+            <h1 id="resultTitle"></h1>
+
+            <div id="resultContent"></div>
+
+            <div class="result-buttons">
+
+                <button id="copyBtn">
+                    결과 복사
+                </button>
+
+                <button id="restartBtn">
+                    다시하기
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
